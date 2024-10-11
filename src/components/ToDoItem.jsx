@@ -12,8 +12,9 @@ function ToDoItem(props) {
 
   return (
     <div
+      className="listBox"
       style={{
-        textDecoration: isDone ? "line-through" : "none",
+        textDecoration: isDone ? "line-through 3px grey" : "none",
         color: "#fd6e6e",
       }}
       onClick={handleClick}
@@ -21,7 +22,8 @@ function ToDoItem(props) {
       <li style={{ color: "#fd6e6e" }}>
         {props.text}
         <RemoveIcon
-          style={{ color: "#fd6e6e", float: "right" }}
+          className="DeleteButton"
+          style={{ color: "#ffffff", float: "right" }}
           size="small"
           onClick={() => {
             props.onChecked(props.id);

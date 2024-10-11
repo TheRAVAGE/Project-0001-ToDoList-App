@@ -78,3 +78,23 @@ li {
   position: relative;
   padding: 0.5rem;
 }
+
+.listBox {
+  background-color: #c1bfbf6b;
+  margin-bottom: 0.5rem;
+  border-radius: 10px;
+}
+
+.listBox:hover {
+  background-color: #c1bfbf15;
+}
+
+.DeleteButton {
+  background-color: #ff000074;
+  border-radius: 2px;
+}
+
+.DeleteButton:hover {
+  background-color: #530000;
+  border-radius: 50%;
+}
